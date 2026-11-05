@@ -1,0 +1,11 @@
+.git
+.gitignore
+.env
+.venv
+myenv
+node_modules
+dist
+coverage
+__pycache__
+*.py[cod]
+.pytest_cache
