@@ -58,10 +58,11 @@ RentEase is a Ghana-focused managed-subleasing and rent-flexibility platform sca
 
 ```sh
 cp .env.example .env
-# Replace SECRET_KEY and JWT_SECRET_KEY before exposing any service.
+# Set unique local database and Redis passwords; replace app secrets before exposure.
 docker compose up --build
 ```
 
+- PostgreSQL runs locally in Compose. For local API development outside Docker, the default SQLite URL can be used or replaced with a PostgreSQL connection string.
 - Web: <http://localhost:8080>
 - API health: <http://localhost:5000/health>
 - Property API: <http://localhost:5000/api/properties>
